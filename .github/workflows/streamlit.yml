@@ -21,11 +21,11 @@ jobs:
      key: ${{ secrets.AWS_KEY }}
      script: |
       script: |
-       cd /home/ubuntu/dummy-text || {
+       cd /home/ubuntu/manas-gitactions || {
         cd /home/ubuntu
-        git clone git@github.com:Raju091998/dummy-text.git
+        git clone git@github.com:Manas9090/manas-gitactions.git
       }
-      cd /home/ubuntu/dummy-text
+      cd /home/ubuntu/manas-gitactions
       git fetch --all
       git reset --hard origin/main
       pkill streamlit || true
